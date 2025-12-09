@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="navbar">
         {!usertype ?       
             <>
-                <h3 >SB Flights</h3>
+                <h2 >MJ AirLines</h2>
 
                 <div className="nav-options" >
                     <p onClick={()=>navigate('/')}>Home</p>
@@ -23,7 +23,7 @@ const Navbar = () => {
         <>
         {usertype === 'customer' ?         
         <>
-            <h3 >SB Flights</h3>
+            <h2 >MJ AirLines</h2>
             <div className="nav-options" >
                 <p onClick={()=>navigate('/')}>Home</p>
                 <p onClick={()=>navigate('/bookings')}>Bookings</p>
@@ -32,7 +32,7 @@ const Navbar = () => {
         </>
             :  usertype === 'admin' ?
                     <>
-                        <h3 >SB Flights (Admin)</h3>
+                         <h2 >MJ AirLines (Admin)</h2>
                         <div className="nav-options" >
                             <p onClick={()=>navigate('/admin')}>Home</p>
                             <p onClick={()=>navigate('/all-users')}>Users</p>
@@ -43,7 +43,7 @@ const Navbar = () => {
                     </>            
                 : usertype === 'flight-operator' ?
                     <>
-                        <h3 >SB Flights (Operator)</h3>
+                        <h2>MJ AirLines (Operator)</h2>
                         <div className="nav-options" >
                             <p onClick={()=>navigate('/flight-admin')}>Home</p>
                             <p onClick={()=>navigate('/flight-bookings')}>Bookings</p>
